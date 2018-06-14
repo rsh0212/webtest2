@@ -1,0 +1,37 @@
+body{
+  margin:0;
+}
+h1{
+  border-bottom-color:black;
+  border-bottom-style:solid;
+  border-bottom-width:10px;
+  padding:10px;
+  margin:0px;
+  font-size:50px;
+  text-align:center;
+}
+
+#grid{
+  display:grid;
+  grid-template-columns: 100px 1fr;
+}
+#grid ul{
+  border-right:black 5px solid;
+  padding-right:100px;
+  padding-top:35px;
+  margin:0;
+  line-height:30px;
+}
+#grid div{
+  padding-left:70px}
+  @media(max-width:800px){
+    #grid{
+      display:block;
+    }
+    #grid ul{
+      border-right:none;
+    }
+    #grid div{
+      margin-top:50px;
+    }
+  }
